@@ -1,15 +1,11 @@
 package vn.hust.soict.lung_function.model;
 
-import android.util.Log;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import vn.hust.soict.lung_function.net.RestRequest;
 
 /**
  * Created by tulc on 15/03/2017.
@@ -20,11 +16,16 @@ public class LungFunction {
     private float mFVC;
     private List<Float> mFlow;
     private List<Float> mVolume;
+    private String mTime;
 
     public LungFunction() {
         mFlow = new ArrayList<>();
         mVolume = new ArrayList<>();
     }
+
+    public String getTime() {return mTime; }
+
+    public void setTime(String mTime) {this.mTime = mTime;}
 
     public float getPEF() {
         return mPEF;

@@ -4,6 +4,7 @@
     android:id="@+id/activity_add_patient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context="vn.hust.soict.lung_function.AddPatientActivity">
 
     <ScrollView
@@ -20,29 +21,57 @@
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin">
 
-
-            <LinearLayout
-                android:id="@+id/layoutFullName"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvFullNameHint"
-                    style="@style/add_patient_item_hint"
-                    android:text="@string/hint_fullname" />
-
-                <EditText
-                    android:id="@+id/edFullName"
-                    style="@style/add_patient_item"
-                    android:layout_height="@dimen/add_patient_item"
-                    android:imeOptions="actionDone"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:maxLines="1" />
+                    android:hint="@string/hint_email"
+                    android:textColor="@color/White"/>
+            </android.support.design.widget.TextInputLayout>
 
-                <View style="@style/separation_horizontal" />
-            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_password"
+                    android:textColor="@color/White"/>
+            </android.support.design.widget.TextInputLayout>
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/edConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_confirm_password"
+                    android:textColor="@color/White"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/edFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/hint_fullname"
+                    android:textColor="@color/White"/>
+            </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:id="@+id/layoutBirthDay"
@@ -53,15 +82,15 @@
                 <TextView
                     android:id="@+id/tvBirthDayHint"
                     style="@style/add_patient_item_hint"
-                    android:text="@string/hint_birthday" />
+                    android:text="@string/hint_birthday"
+                    android:textColor="@color/separation"/>
 
                 <DatePicker
                     android:id="@+id/datePickerBirthDay"
                     style="@style/datePickerTheme"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></DatePicker>
+                    android:layout_height="wrap_content"/>
 
-                <View style="@style/separation_horizontal" />
             </LinearLayout>
 
             <LinearLayout
@@ -73,7 +102,8 @@
                 <TextView
                     android:id="@+id/tvGenderHint"
                     style="@style/add_patient_item_hint"
-                    android:text="@string/hint_birthday" />
+                    android:text="@string/hint_gender"
+                    android:textColor="@color/separation"/>
 
                 <RadioGroup
                     android:id="@+id/rgGender"
@@ -102,55 +132,45 @@
                         android:textSize="@dimen/add_patient_text" />
                 </RadioGroup>
 
-                <View style="@style/separation_horizontal" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/layoutWeight"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                >
+                <EditText android:id="@+id/edWeight"
+                    style="@style/add_patient_item"
+                    android:layout_height="@dimen/add_patient_item"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:textColor="@color/White"
+                    android:hint="@string/hint_weight"
+                    android:gravity="left"/>
 
-                <TextView
-                    android:id="@+id/tvWeightHint"
-                    style="@style/add_patient_item_hint"
-                    android:text="@string/hint_weight" />
+                <View style="@style/separation_horizontal"/>
+            </android.support.design.widget.TextInputLayout>
 
-                <EditText
-                    android:id="@+id/edWeight"
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/edHeight"
                     style="@style/add_patient_item"
                     android:layout_height="@dimen/add_patient_item"
                     android:imeOptions="actionNext"
                     android:inputType="numberSigned"
                     android:maxLength="3"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:textColor="@color/White"
+                    android:hint="@string/hint_height"
+                    android:gravity="left"/>
 
-                <View style="@style/separation_horizontal" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/layoutHeight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvHeightHint"
-                    style="@style/add_patient_item_hint"
-                    android:text="@string/hint_height" />
-
-                <EditText
-                    android:id="@+id/edHeight"
-                    style="@style/add_patient_item"
-                    android:layout_height="@dimen/add_patient_item"
-                    android:imeOptions="actionDone"
-                    android:inputType="numberSigned"
-                    android:maxLength="3"
-                    android:maxLines="1" />
-
-                <View style="@style/separation_horizontal" />
-            </LinearLayout>
+                <View style="@style/separation_horizontal"/>
+            </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:id="@+id/layoutRegion"
@@ -161,7 +181,8 @@
                 <TextView
                     android:id="@+id/tvRegionHint"
                     style="@style/add_patient_item_hint"
-                    android:text="@string/hint_region" />
+                    android:text="@string/hint_region"
+                    android:textColor="@color/lung_function_text_content"/>
 
                 <RadioGroup
                     android:id="@+id/rgRegion"
@@ -198,7 +219,6 @@
 
                 </RadioGroup>
 
-                <View style="@style/separation_horizontal" />
             </LinearLayout>
 
             <LinearLayout
@@ -210,7 +230,8 @@
                 <TextView
                     android:id="@+id/tvSmokingHint"
                     style="@style/add_patient_item_hint"
-                    android:text="@string/hint_smoking" />
+                    android:text="@string/hint_smoking"
+                    android:textColor="@color/lung_function_text_content"/>
 
                 <RadioGroup
                     android:id="@+id/rgSmoking"
@@ -237,8 +258,116 @@
                         android:textSize="@dimen/add_patient_text" />
                 </RadioGroup>
 
-                <View style="@style/separation_horizontal" />
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCareTakersHint"
+                    style="@style/add_patient_item_hint"
+                    android:text="@string/hint_doctor"
+                    android:textColor="@color/lung_function_text_content"/>
+
+                <RadioGroup
+                    android:id="@+id/rgCareTakers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbCareTakersYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_patient_item"
+                        android:gravity="center_vertical"
+                        android:text="@string/doctor_yes"
+                        android:textColor="@color/add_patient_text"
+                        android:textSize="@dimen/add_patient_text" />
+
+                    <RadioButton
+                        android:id="@+id/rbCareTakersNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_patient_item"
+                        android:gravity="center_vertical"
+                        android:text="@string/doctor_no"
+                        android:textColor="@color/add_patient_text"
+                        android:textSize="@dimen/add_patient_text" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/edAdminPEF"
+                        style="@style/add_patient_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLines="1"
+                        android:textColor="@color/White"
+                        android:hint="@string/hint_admin_PEF"
+                        android:gravity="left"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/edAdminFVC"
+                        style="@style/add_patient_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLines="1"
+                        android:textColor="@color/White"
+                        android:hint="@string/hint_admin_FVC"
+                        android:gravity="left"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/edAdminFEV1"
+                        style="@style/add_patient_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLines="1"
+                        android:textColor="@color/White"
+                        android:hint="@string/hint_admin_FEV1"
+                        android:gravity="left"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnSignup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/hint_register"
+                android:gravity="center"
+                android:background="@drawable/bg_icon_patient"
+                android:textColor="@color/White"/>
 
         </LinearLayout>
     </ScrollView>

@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/selectPatient"
-        android:icon="@drawable/ic_contacts_white"
-        android:title="@string/action_select"
-        app:showAsAction="always" />
+        android:id="@+id/btnHistory"
+        android:title="@string/text_history"
+        app:showAsAction="never"
+        app:itemTextColor="@color/text_button_lung_function"
+        />
+
+    <item
+        android:id="@+id/btnFollow"
+        android:title="@string/text_follow_menu"
+        app:showAsAction="never"
+        app:itemTextColor="@color/text_button_lung_function"
+        />
+
+    <item
+        android:id="@+id/btnListFollow"
+        android:title="@string/text_list_follow_menu"
+        app:showAsAction="never"
+        app:itemTextColor="@color/text_button_lung_function"
+        />
+
+    <item
+        android:id="@+id/btnLogout"
+        android:title="@string/hint_logout"
+        app:showAsAction="never"
+        app:itemTextColor="@color/text_button_lung_function"
+        />
 
 </menu>

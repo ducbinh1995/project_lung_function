@@ -28,6 +28,7 @@
     <color name="lung_function_text_content_hint">#001bc7</color>
     <color name="chart_label_text">#001bc7</color>
     <color name="chart_label_line">#e24c01</color>
+    <color name="chart_pred_line">#00676b</color>
 
     <!-- Add Patient Activity -->
     <color name="add_patient_text_hint">#303F9F</color>

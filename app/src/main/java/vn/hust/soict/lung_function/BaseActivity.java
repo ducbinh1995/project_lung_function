@@ -6,9 +6,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-/**
- * Created by tulc on 15/03/2017.
- */
 public class BaseActivity extends AppCompatActivity {
     protected Context mContext;
 

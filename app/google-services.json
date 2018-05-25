@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "178670560024",
+    "firebase_url": "https://lung-function.firebaseio.com",
+    "project_id": "lung-function",
+    "storage_bucket": "lung-function.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178670560024:android:486c2704cf2b3dbb",
+        "android_client_info": {
+          "package_name": "vn.hust.soict.lung_function"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178670560024-ongql2pm5ul9ork58f284spckd7337ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMAu-T0pA1cs2bsMLjuBbLvfdLTCKeUD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

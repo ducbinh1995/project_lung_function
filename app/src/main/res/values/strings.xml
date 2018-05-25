@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Lung Function</string>
 
-    <string name="lung_function_title_activity">Chức năng phổi</string>
+    <string name="user_info_title_activity">Thông tin người dùng</string>
+    <string name="lung_function_title_activity">Kết quả đo</string>
     <string name="add_patient_title_activity">Thêm người đo</string>
+    <string name="login_title_activity">Đăng nhập</string>
+    <string name="list_follow_title_activity">Danh sách người dùng theo dõi</string>
+    <string name="follow_title_activity">Tìm kiếm người dùng</string>
 
     <string name="action_add">Thêm</string>
     <string name="action_select">Chọn người đo</string>
@@ -11,6 +15,9 @@
 
     <string name="msg_text_request_add_patient">Vui lòng cung cấp thông tin \ntrước khi đo \n\"Chức năng phổi\"</string>
 
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_confirm_password">Nhập lại mật khẩu</string>
     <string name="hint_fullname">Họ và tên</string>
     <string name="hint_birthday">Ngày sinh</string>
     <string name="hint_weight">Cân nặng (kg)</string>
@@ -18,6 +25,16 @@
     <string name="hint_gender">Giới tính</string>
     <string name="hint_region">Vùng miền</string>
     <string name="hint_smoking">Tình trạng hút thuốc</string>
+    <string name="hint_doctor">Chức vụ</string>
+    <string name="hint_admin_PEF">PEF</string>
+    <string name="hint_admin_FVC">FVC</string>
+    <string name="hint_admin_FEV1">FEV1</string>
+    <string name="hint_logout">Đăng xuất</string>
+    <string name="hint_login">Đăng nhập</string>
+    <string name="hint_register">Đăng ký</string>
+
+    <string name="hint_url">Server URL</string>
+    <string name="msg_input_url">Vui lòng nhập URL</string>
 
     <string name="gender_male">Nam</string>
     <string name="gender_female">Nữ</string>
@@ -26,6 +43,8 @@
     <string name="region_south">Miền Nam</string>
     <string name="smoking_yes">Có hút thuốc</string>
     <string name="smoking_no">Không hút thuốc</string>
+    <string name="doctor_yes">Bác sỹ và người nhà</string>
+    <string name="doctor_no">Bệnh nhân</string>
 
     <string name="button_lung_function">Đo chức năng phổi</string>
 
@@ -37,12 +56,37 @@
     <string name="text_label_flow">Flow (L/s)</string>
     <string name="text_label_volume">Volume (L)</string>
 
+    <string name="text_follow_menu">Theo dõi người đo</string>
+    <string name="text_list_follow_menu">Danh sách theo dõi</string>
+    <string name="text_history">Lịch sử đo</string>
+
     <!-- Add Patient -->
     <string name="text_add_patient">Thêm người đo</string>
     <string name="msg_input_name">Vui lòng nhập họ và tên</string>
+    <string name="msg_input_email">Vui lòng nhập email</string>
+    <string name="msg_input_password">Vui lòng nhập mật khẩu</string>
+    <string name="msg_input_confirm_password">Vui lòng xác nhận lại mật khẩu</string>
+    <string name="msg_input_password_length">Độ dài mật khẩu ít nhất 6 ký tự</string>
     <string name="msg_input_height">Vui lòng nhập chiều cao</string>
     <string name="msg_input_weight">Vui lòng nhập cân nặng</string>
     <string name="msg_input_region">Vui lòng nhập chọn khu vực</string>
     <string name="msg_input_gender">Vui lòng nhập chọn giới tính</string>
     <string name="msg_input_smoking">Vui lòng nhập lựa chọn có hút thuốc hay không</string>
+    <string name="msg_input_doctor">Vui lòng nhập lựa chọn chức vụ</string>
+    <string name="title_activity_login">Đăng nhập</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="default_notification_channel_id">default</string>
 </resources>

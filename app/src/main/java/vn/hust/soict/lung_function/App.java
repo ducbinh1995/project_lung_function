@@ -5,9 +5,6 @@ import android.app.Application;
 import io.realm.Realm;
 import vn.hust.soict.lung_function.utils.FontUtils;
 
-/**
- * Created by tulc on 15/03/2017.
- */
 public class App extends Application {
 
     @Override
