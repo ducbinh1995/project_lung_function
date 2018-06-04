@@ -1,8 +1,5 @@
 package vn.hust.soict.lung_function.model;
 
-/**
- * Created by tulc on 15/03/2017.
- */
 public class Profile {
     public static final String REGION_NORTHEN = "B";
     public static final String REGION_CENTRAL = "T";

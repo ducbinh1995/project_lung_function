@@ -24,10 +24,6 @@ import java.util.List;
 import vn.hust.soict.lung_function.model.LungFunction;
 import vn.hust.soict.lung_function.utils.FontUtils;
 
-/**
- * Created by ducbinh on 5/9/2018.
- */
-
 public class ResultAdapter extends BaseAdapter {
     Context mContext;
     LungFunction[] data;

@@ -11,7 +11,6 @@ public class AppConstant {
 
     public static final String KEY_SERVER_URL = "KEY_SERVER_URL";
 
-//    public static final int TIME_RECORD_DEFAULT = 4;
     public static final int TIME_RECORD_DEFAULT = 4000;
 
     public static final int RECORDER_SAMPLERATE = 8000;

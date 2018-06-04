@@ -7,9 +7,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by tulc on 15/03/2017.
- */
 public class LungFunction {
     private float mPEF;
     private float mFEV1;

@@ -3,9 +3,6 @@ package vn.hust.soict.lung_function.data;
 import vn.hust.soict.lung_function.model.LungFunction;
 import vn.hust.soict.lung_function.model.Profile;
 
-/**
- * Created by tulc on 15/03/2017.
- */
 public class AppData {
     private static AppData mAppData;
 

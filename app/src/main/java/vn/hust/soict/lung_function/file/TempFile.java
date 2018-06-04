@@ -10,9 +10,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Date;
 
-/**
- * Created by tulc on 15/03/2017.
- */
 public class TempFile {
     private Context mContext;
 

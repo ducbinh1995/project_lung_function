@@ -11,9 +11,6 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-/**
- * Created by ducbinh on 5/20/2018.
- */
 
 public class MyFirebaseMessageService extends FirebaseMessagingService {
     @Override

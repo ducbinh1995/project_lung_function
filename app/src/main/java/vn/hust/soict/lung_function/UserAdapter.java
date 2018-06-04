@@ -16,10 +16,6 @@ import java.util.List;
 
 import vn.hust.soict.lung_function.utils.FontUtils;
 
-/**
- * Created by ducbinh on 5/20/2018.
- */
-
 public class UserAdapter extends BaseAdapter {
 
     Context mContext;
