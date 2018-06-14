@@ -240,7 +240,6 @@ public class LoginActivity extends BaseActivity {
             bufferSize = AppConstant.BUFFER_SIZE_DEFAULT;
         }
         mProfile = new Profile();
-//        mRealmDB = new RealmDB();
     }
 
     private void showDialogSetupUrl() {

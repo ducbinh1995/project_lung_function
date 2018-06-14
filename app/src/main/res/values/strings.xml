@@ -33,6 +33,12 @@
     <string name="hint_login">Đăng nhập</string>
     <string name="hint_register">Đăng ký</string>
 
+    <string name="unit_weight">kg</string>
+    <string name="unit_height">cm</string>
+
+    <string name="unfollow_text">Bỏ theo dõi</string>
+    <string name="follow_text">Theo dõi</string>
+
     <string name="hint_url">Server URL</string>
     <string name="msg_input_url">Vui lòng nhập URL</string>
 

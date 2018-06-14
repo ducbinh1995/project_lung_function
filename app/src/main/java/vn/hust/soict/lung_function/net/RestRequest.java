@@ -128,7 +128,8 @@ public class RestRequest {
             while ((output = br.readLine()) != null) {
                 response.append(output + "\n");
             }
-            JSONObject jsonResponse = new JSONObject(response.toString());
+            JSONObject jsonResponse = new
+                    JSONObject(response.toString());
             return jsonResponse;
         }
         catch (Exception e) {

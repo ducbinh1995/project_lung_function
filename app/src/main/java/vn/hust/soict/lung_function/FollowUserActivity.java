@@ -139,7 +139,7 @@ public class FollowUserActivity extends BaseActivity {
             String result = jsonResponse.getString("status");
             if (result.equals("success")){
                 followed = "0";
-                btnFollow.setText("Theo dõi");
+                btnFollow.setText(R.string.follow_text);
             }
         }
         catch (Exception e) {
@@ -201,7 +201,7 @@ public class FollowUserActivity extends BaseActivity {
             String result = jsonResponse.getString("status");
             if (result.equals("success")) {
                 followed = "1";
-                btnFollow.setText("Bỏ theo dõi");
+                btnFollow.setText(R.string.unfollow_text);
             }
         }
         catch (Exception e) {
@@ -273,10 +273,10 @@ public class FollowUserActivity extends BaseActivity {
                 mLayoutSearchResult.setVisibility(View.VISIBLE);
                 tvResultName.setText(userName);
                 if (followed.equals("1")) {
-                    btnFollow.setText("Bỏ theo dõi");
+                    btnFollow.setText(R.string.unfollow_text);
                 }
                 else {
-                    btnFollow.setText("Theo dõi");
+                    btnFollow.setText(R.string.follow_text);
                 }
             }
         }

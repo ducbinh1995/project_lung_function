@@ -323,8 +323,8 @@ public class MainActivity extends BaseActivity {
     private void initData() {
         mProfile = new Profile();
         mProfile.setEmail("ABC@MAIL.COM");
-        mProfile.setName("LE CONG Tu");
-        mProfile.setBirthDay("07/02/1994");
+        mProfile.setName("Phi Duc Binh");
+        mProfile.setBirthDay("07/02/1995");
         mProfile.setMale("male");
         mProfile.setHeight("160");
         mProfile.setWeight("60");
@@ -339,17 +339,17 @@ public class MainActivity extends BaseActivity {
             edBirthDay.setText(mProfile.getBirthDay());
             switch (mProfile.isMale()) {
                 case "male":
-                    edGender.setText("Nam");
+                    edGender.setText(R.string.gender_male);
                     break;
                 case "female":
-                    edGender.setText("Nữ");
+                    edGender.setText(R.string.gender_female);
                     break;
                 default:
                     edGender.setText("");
                     break;
             }
-            edWeight.setText(mProfile.getWeight() + "kg");
-            edHeight.setText(mProfile.getHeight() + "cm");
+            edWeight.setText(mProfile.getWeight() + R.string.unit_weight);
+            edHeight.setText(mProfile.getHeight() + R.string.unit_height);
             switch (mProfile.getRegion()) {
                 case Profile.REGION_NORTHEN:
                     edRegion.setText(R.string.region_northen);

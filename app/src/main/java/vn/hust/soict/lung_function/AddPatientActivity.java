@@ -189,6 +189,7 @@ public class AddPatientActivity extends BaseActivity {
 
         if (!strTmp.equals(strTmp2)) {
             Prompt.show(mContext,R.string.msg_input_confirm_password);
+            return;
         }
 
         mProfile.setPassword(strTmp);
